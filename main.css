@@ -1,0 +1,182 @@
+/* I didn't divide the code as it's very simple and short, hope you'll understand everything */
+
+.nav-link {
+    transition: all 0.4s;
+}
+
+.nav-link:hover {
+    background-color: #ced4da;
+    border-radius: 4px;
+}
+
+.gradient {
+    background: rgb(0, 97, 242);
+    background: linear-gradient(135deg, rgba(0, 97, 242, 1) 0%, rgba(105, 0, 199, 1) 100%);
+}
+
+.page-header {
+    margin-top: 3.5rem;
+    color: #fff;
+}
+
+.svg-header {
+    margin-top: -3rem;  
+}
+
+.feature {
+    color: #fff;
+}
+
+.feature ul {
+    list-style: none;
+    padding: 2rem;
+}
+
+.feature ul li {
+    padding: lef
+    2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.feature li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature li:hover {
+    transform: translateX(1rem);
+}
+
+.gallery {
+    color: #fff;
+    background-color: #0061f2;    
+}
+
+.work-img {
+    cursor: pointer;
+    transition: all 2s;
+    border-radius: 3px;
+}
+
+.work-img:hover {
+    transform: scale(1.5);
+    filter: brightness(0.5);
+}
+
+.img-col {
+    overflow: hidden;   
+}
+
+.footer-box {
+    color: #fff;
+}
+
+.chroma-img {
+    cursor: pointer;
+    filter: brightness(0.9);
+    transition: all 0.3s;
+}
+
+.chroma-img:hover {
+    filter: brightness(1);
+    transform: translateY(-3px);
+}
+
+.comp-img {
+    filter: brightness(0.6);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.comp-img:hover {
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+
+.project-img-box {
+    position: relative;
+}
+
+.box-p {
+    position: absolute;
+    bottom: -15%;
+    left: 0%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.804);
+    transition: all 1s;
+    height: 15%;
+    width: 100%;
+    opacity: 0;
+    color: #000;
+    font-weight: 600;   
+}
+
+.box-p:hover {
+    background-color: #fff;
+    transition: 0.15s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.project-img-box:hover .box-p {
+    bottom: -5%;
+    opacity: 1;
+}
+
+.name {transition: all 0.3s; cursor: pointer;}
+
+.name:hover {
+    color: orange;
+}
+
+@media (max-width: 770px) {
+    .header-box {padding-top: 20px; text-align: center;}
+    .about-box {text-align: center;}
+    .icons {text-align: center;}
+    .learn-btn {margin-top: 5px;}
+    .project-img-box {margin-top: 5px;}
+    .form-contact {text-align: center;}
+    .project-img-box:hover .box-p {
+        bottom: -7% !important;
+        opacity: 1;
+    }
+    .about-box {
+        position: relative;
+    }
+    .service-menu {
+        padding: 0rem !important;
+    }  
+} 
+
+@media (max-width: 580px) {
+    .project-img-box {transform: scale(0.8); margin-top: -4rem !important;}
+    .box-p {font-size: 150%;}
+    .project-img-box:hover .box-p {
+        bottom: -9% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0%;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .companies {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0%;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .project-img-box:hover .box-p {
+        bottom: -6% !important;
+    } 
+}

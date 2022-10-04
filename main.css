@@ -173,8 +173,6 @@
     }
 }
 
-
-
 @media (max-width: 400px) {
     .project-img-box:hover .box-p {
         bottom: -6% !important;
